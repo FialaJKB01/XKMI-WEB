@@ -4,7 +4,9 @@
 }
 
 #topBackground {
-    background: linear-gradient(to right, #ffffff 50%, rgb(255, 147, 1, 0.5) 50%);
+    background-image: url('./images/head-background.svg');
+    background-position: right;
+    background-size: cover;
 }
 
 .head {
