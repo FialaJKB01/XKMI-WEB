@@ -1,0 +1,473 @@
+#top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#topBackground {
+    background: linear-gradient(to right, #ffffff 50%, rgb(255, 147, 1, 0.5) 50%);
+}
+
+.head {
+    width: 50%;
+    margin-top: 50px;
+    height: auto;
+}
+
+.topImg {
+    width: 50%;
+    padding: auto 12.5%;
+    text-align: center;
+}
+
+@media (max-width: 959px) {
+    .topImg {
+        display: none;
+    }
+
+    #topBackground {
+        background: #ffffff;
+    }
+
+    .head {
+        width: 100%;
+    }
+
+    #biography {
+        display: block;
+        justify-content: center;
+    }
+
+    #biographyHead {
+        width: 100%;
+    }
+
+    #biographyAvatar {
+        max-width: 25%;
+    }
+
+    #whatIDo ul {
+        display: block;
+        justify-content: center;
+    }
+
+    #whatIDo li {
+        max-width: 100%;
+        margin: 1em 0;
+    }
+}
+
+#avatar {
+    width: 75%;
+}
+
+#top h1 {
+    margin: 0;
+    font-weight: bold;
+    color: #0b0b15;
+}
+
+#top h2 {
+    margin: 0;
+    font-weight: bold;
+    color: #ff9301;
+}
+
+#topMenu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 4em 0 0 0;
+    width: 100%;
+}
+
+#topMenu a {
+    text-decoration: none;
+    color: #555555;
+    padding-bottom: 10px;
+}
+
+#topMenu a:hover {
+    border-bottom: 3px solid #ff9301;
+}
+
+@media (min-width: 960px) {
+    #biography {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+#biographyBackground {
+    background-color: #f7f7ff;
+    width: 100%;
+    padding-top: 4vw;
+}
+
+#biographyAvatar {
+    width: 66%;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #ff9301;
+}
+
+#biographyHead {
+    text-align: center;
+}
+
+#biographyHead h4 {
+    color: #ff9301;
+    font-size: 0.9em;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 0.9em;
+}
+
+.background {
+    width: 100%;
+    padding: 2vw 0;
+}
+
+div:not(.background) {
+    max-width: 1140px;
+}
+
+* {
+    font-family: Roboto;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#whatIDoBackground {
+    background-color: #f7f7ff;
+}
+
+#whatIDo {
+    margin-top: 4vw;
+}
+
+@media (min-width: 960px) {
+    #whatIDo ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #whatIDo li {
+        max-width: 30%;
+    }
+}
+
+#whatIDo ul {
+    list-style-type: none;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#whatIDo li {
+    display: block;
+    align-items: stretch;
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 2em;
+    height: 100%;
+}
+
+#whatIDo img {
+    max-width: 7em;
+    max-height: 7em;
+    background-color: #ff9301;
+    padding: 2em;
+    margin-bottom: 1em;
+    margin-left: -1em;
+    margin-top: -1em;
+    border-radius: 2em 0 50% 0;
+    border-width: thin;
+}
+
+#divider {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#divider img {
+    max-width: 12.5%;
+}
+
+#awardsBackground {
+    background-color: #f7f7ff;
+}
+
+#awards ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 1em 0;
+    padding: 0;
+    width: 100%;
+}
+
+#awards li {
+    flex: 1;
+    background-color: #ffffff;
+    max-width: 30%;
+    padding: 5% 0;
+    border-radius: 2em;
+    height: 100%;
+    text-align: center;
+}
+
+#awards img {
+    max-width: 20%;
+}
+
+#experience ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#experience li {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em 0;
+    background-color: #f7f7ff;
+    padding: 3em 2em;
+    border-radius: 2em;
+}
+
+.employmentDetails label {
+    display: inline-block;
+    padding: 0.33em;
+    border-radius: 0.3em;
+}
+
+.fullTime {
+    background-color: #ff9301;
+}
+
+.partTime {
+    background-color: #555555;
+}
+
+#experience label p {
+    color: #ffffff;
+}
+
+.employmentDetails {
+    width: 20%;
+}
+
+.employmentDescription {
+    width: 75%;
+}
+
+.verticalDivider {
+    padding: 4% 1px;
+    background-color: #eeeeee;
+}
+
+li {
+    margin: 0;
+}
+
+#myPortfolio ul {
+    display: grid;
+    list-style-type: none;
+    margin: 1em 0;
+    padding: 0;
+    gap: 1em;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+#myPortfolio li {
+    display: block;
+    width: 100%;
+}
+
+.portfolioPicture {
+    background-color: #f7f7ff;
+    font-size: 2em;
+    text-align: center;
+    padding: 2em;
+}
+
+#contact-background {
+    background-color: #f7f7ff;
+}
+
+@media (min-width: 960px) {
+    #contact-form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #input-boxes {
+        max-width: 50%;
+        margin: 0;
+    }   
+}
+
+#contact-form {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#contact-info {
+    display: block;
+    padding: 0;
+    margin: 0;
+    max-width: 50%;
+}
+
+@media (max-width: 959px) {
+    #contact-form {
+        display: block;
+    }
+
+    #contact-info {
+        max-width: 100%;
+        margin: 0 1em;
+    }
+
+    #input-boxes {
+        max-width: 100%;
+        margin: 2em 1em 0 1em;
+    }
+}
+
+@media (max-width: 1140px){
+    #contact {
+        margin: 0 1em;
+    }
+}
+
+#input-boxes {
+    display: block;
+    padding: 0;
+}
+
+#input-boxes div,
+#input-boxes>input,
+#input-boxes textarea {
+    width: 100%;
+}
+
+#input-boxes input,
+#input-boxes textarea {
+    margin: 1em 0;
+    height: 4em;
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+}
+
+#input-boxes textarea {
+    height: 10em;
+}
+
+#personal-inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+#personal-inputs input {
+    width: 49%;
+    margin: 0;
+}
+
+.contact-details {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-details img {
+    max-width: 5%;
+    margin: 0;
+}
+
+.contact-details p {
+    padding: 1em;
+    margin: 0;
+    font-weight: bold;
+}
+
+#input-boxes label {
+    background-color: #0b0b15;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 0.3em;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+#input-boxes label:hover {
+    background-color: #ffffff;
+    color: #0b0b15;
+    border: 2px solid #0b0b15;
+}
+
+iframe {
+    margin: 1vw auto;
+    max-width: 1140px;
+}
+
+footer {
+    height: 4vw;
+    border-top: 1px solid #eeeeee;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 2em auto;
+}
+
+#social-networks {
+    padding: 0;
+    margin: 0;
+}
+
+footer img {
+    width: 7%;
+    padding: 0;
+    margin: 0;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
