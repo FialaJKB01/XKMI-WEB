@@ -56,6 +56,24 @@
     }
 }
 
+@media (max-width: 559px) {
+    #topMenu {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    }
+
+    .menu-button {
+        background-color: #ff9301;
+        padding: 1em 1em;
+        border-radius: 0.3em;
+    }
+
+    .menu-button:hover {
+        background-color: #eeeeee;
+    }
+}
+
 #avatar {
     width: 75%;
 }
@@ -72,9 +90,18 @@
     color: #ff9301;
 }
 
+@media (min-width: 560px) {
+    #topMenu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #topMenu a:hover {
+        border-bottom: 3px solid #ff9301;
+    }
+}
+
 #topMenu {
-    display: flex;
-    justify-content: space-between;
     list-style-type: none;
     padding: 0;
     margin: 4em 0 0 0;
@@ -87,9 +114,7 @@
     padding-bottom: 10px;
 }
 
-#topMenu a:hover {
-    border-bottom: 3px solid #ff9301;
-}
+
 
 @media (min-width: 960px) {
     #biography {
@@ -220,19 +245,39 @@ div:not(.background) {
     background-color: #f7f7ff;
 }
 
+@media (min-width: 560px) {
+    #awards ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    #awards li {
+        flex: 1;
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 559px) {
+    #awards ul {
+        display: block;
+    }
+
+    #awards li {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 1em 1em;
+    }
+}
+
 #awards ul {
-    display: flex;
-    justify-content: space-between;
     list-style-type: none;
-    margin: 1em 0;
+    margin: 1em 0em;
     padding: 0;
     width: 100%;
 }
 
 #awards li {
-    flex: 1;
     background-color: #ffffff;
-    max-width: 30%;
     padding: 5% 0;
     border-radius: 2em;
     height: 100%;
@@ -329,7 +374,7 @@ li {
     #input-boxes {
         max-width: 50%;
         margin: 0;
-    }   
+    }
 }
 
 #contact-form {
@@ -361,7 +406,7 @@ li {
     }
 }
 
-@media (max-width: 1140px){
+@media (max-width: 1140px) {
     #contact {
         margin: 0 1em;
     }
